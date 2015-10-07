@@ -1,0 +1,13 @@
+Bunny Up
+
+Create an app that will choose random groups for the class.
+
+Take a list of student names, and the desired group size as input, and print out a list of the assigned groups.
+
+  students = (Iwona, Craig, GraemeK, Kathryn, Kieran, Peter, Ere, Chae, Zsolt, Simon, Syed, Kieran, GraemeS, Keith, Nevin)
+Things to think about
+
+What to do if the class does not divide evenly into the group size?
+
+you need to decide what to do with the remaining students
+how do you ensure the list is randomised
