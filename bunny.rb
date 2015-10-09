@@ -1,3 +1,14 @@
+require 'pry-byebug'
+
+# my_num = 4
+# value = gets.to_i
+# until value == my_num
+
+#   binding.pry 
+#   puts "nope"
+#   value == gets.to_i
+# end
+
 students = %w(Iwona Craig GraemeK Kathryn Kieran Peter Ere Chae Zsolt Simon Syed Neil GraemeS Keith Nevin)
 students.shuffle!
 groups = []
@@ -13,7 +24,6 @@ end
 incrementer =0
 
 students.each  do |student|
-  #puts incrementer
   groups[incrementer] << student
   if incrementer == totalgroups-1
     incrementer = 0
@@ -27,6 +37,4 @@ groupnumber=0
 groups.each do |group|
   groupnumber +=1
   puts "Group #{groupnumber} - #{group}"
-end
-#puts incrementer
-#puts groups
+  end
