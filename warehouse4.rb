@@ -54,8 +54,6 @@ def create_bays
 #binding.pry
 end
 
-
-
 def add_item
   print "Please enter product name: "
   requested_product = gets.chomp.downcase
@@ -101,7 +99,7 @@ end
 
 def list_order
   #sort @trolley by index of bays
-  #ßbinding.pry
+  binding.pry
   sorted_list = []
   @trolley.each do |bay_no|
     current = @bays.index(bay_no.to_s)
@@ -141,10 +139,13 @@ def menu
 end
 
 def reverse_lookup
-  puts "Enter bay number"
+  puts "Enter bay number(s)"
   bay_no = gets.chomp
-  @trolley << bay_no
-  puts "Product added: #{@products[bay_no.to_sym]}"
+  bay_list = bay_no.split(", ")
+  bay_list.each do |item|
+    @trolley << item
+  puts "Product added: #{@products[item.to_sym]}"
+end
   menu
 end
 
