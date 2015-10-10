@@ -50,8 +50,7 @@ def create_bays
     end
   end
 
-  puts @products.keys
-#binding.pry
+ # puts @products.keys
 end
 
 def add_item
@@ -99,7 +98,6 @@ end
 
 def list_order
   #sort @trolley by index of bays
-  binding.pry
   sorted_list = []
   @trolley.each do |bay_no|
     current = @bays.index(bay_no.to_s)
