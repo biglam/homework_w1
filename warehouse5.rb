@@ -171,7 +171,7 @@ end
 
 create_bays
 #get_input
-menu
+#menu
 new_menu
 
 #add_by_bay
